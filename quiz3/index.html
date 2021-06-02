@@ -1,20 +1,20 @@
 ﻿<h1>El Gamal Cryptosystem</h1>
 <h3>1. (a) Consider the prime <img src="https://i.upmath.me/svg/p%20%3D%20107" alt="p = 107" />. Show that <img src="https://i.upmath.me/svg/2" alt="2" /> generates <img src="https://i.upmath.me/svg/%20%7B%5Cmathbb%7BF%7D_%7B107%7D%7D%5E%7B%5Cstar%7D" alt=" {\mathbb{F}_{107}}^{\star}" />.</h3>
-<p>Since <img src="https://i.upmath.me/svg/%20%7C%7B%5Cmathbb%7BF%7D_%7B107%7D%7D%5E%7B%5Cstar%7D%7C%20%3D%20106%20%3D%202%20*%2053%20" alt=" |{\mathbb{F}_{107}}^{\star}| = 106 = 2 * 53 " />,  it’s satisfied to prove that
+<p>Since <img src="https://i.upmath.me/svg/%20%7C%7B%5Cmathbb%7BF%7D_%7B107%7D%7D%5E%7B%5Cstar%7D%7C%20%3D%20106%20%3D%202%20%5Ctimes%2053%20" alt=" |{\mathbb{F}_{107}}^{\star}| = 106 = 2 \times 53 " />,  it’s satisfied to prove that
 <img src="https://i.upmath.me/svg/%202%5E%7B53%7D%20%5Cequiv%20-1%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20" alt=" 2^{53} \equiv -1\ (\textrm{mod}\ 107) " /> .</p>
 <p>Consider that <img src="https://i.upmath.me/svg/%2053%20%3D%2032%20%2B%2016%20%2B%204%20%2B%201%20" alt=" 53 = 32 + 16 + 4 + 1 " />, then</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign%7D%20%0A%20%20%20%202%5E%7B53%7D%20%26%20%5Cequiv%202%5E%7B32%7D%20*%202%5E%7B16%7D%20*%202%5E%7B4%7D%20*%202%5E%7B1%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2029%20*%2052%20*%2016%20*%202%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20(52%20*%202)%20*%2029%20*%2016%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20-3%20*%2029%20*%2016%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20(29%20*%204)%20*%20(-3)%20*%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%209%20*%20(-3)%20*%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20-108%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%20%5C%5C%0A%26%20%5Cequiv%20-1%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%0A%5Cend%7Balign%7D" alt="\begin{align} 
-    2^{53} &amp; \equiv 2^{32} * 2^{16} * 2^{4} * 2^{1} \ (\textrm{mod}\ 107)
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%5Cbegin%7Balign%7D%20%0A%20%20%20%202%5E%7B53%7D%20%26%20%5Cequiv%202%5E%7B32%7D%20%5Ctimes%202%5E%7B16%7D%20%5Ctimes%202%5E%7B4%7D%20%5Ctimes%202%5E%7B1%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2029%20%5Ctimes%2052%20%5Ctimes%2016%20%5Ctimes%202%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20(52%20%5Ctimes%202)%20%5Ctimes%2029%20%5Ctimes%2016%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20-3%20%5Ctimes%2029%20%5Ctimes%2016%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20(29%20%5Ctimes%204)%20%5Ctimes%20(-3)%20%5Ctimes%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%209%20%5Ctimes%20(-3)%20%5Ctimes%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20-108%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%20%5C%5C%0A%26%20%5Cequiv%20-1%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%0A%5Cend%7Balign%7D" alt="\begin{align} 
+    2^{53} &amp; \equiv 2^{32} \times 2^{16} \times 2^{4} \times 2^{1} \ (\textrm{mod}\ 107)
     \notag  \\
-    &amp; \equiv 29 * 52 * 16 * 2 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 29 \times 52 \times 16 \times 2 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv (52 * 2) * 29 * 16 \ (\textrm{mod}\ 107) 
+    &amp; \equiv (52 \times 2) \times 29 \times 16 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv -3 * 29 * 16 \ (\textrm{mod}\ 107) 
+    &amp; \equiv -3 \times 29 \times 16 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv (29 * 4) * (-3) * 4 \ (\textrm{mod}\ 107) 
+ &amp; \equiv (29 \times 4) \times (-3) \times 4 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 9 * (-3) * 4 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 9 \times (-3) \times 4 \ (\textrm{mod}\ 107) 
     \notag \\
  &amp; \equiv -108 \ (\textrm{mod}\ 107) 
 \notag \\
@@ -24,50 +24,50 @@
 <p>Therefore, <img src="https://i.upmath.me/svg/2" alt="2" /> generates <img src="https://i.upmath.me/svg/%20%7B%5Cmathbb%7BF%7D_%7B107%7D%7D%5E%7B%5Cstar%7D" alt=" {\mathbb{F}_{107}}^{\star}" />.</p>
 <h3>(b) Take <img src="https://i.upmath.me/svg/%20p%3D107%20" alt=" p=107 " /> and <img src="https://i.upmath.me/svg/%5Calpha%3D2" alt="\alpha=2" />. You select <img src="https://i.upmath.me/svg/d%3D13" alt="d=13" />. What is the public key?</h3>
 <p>We now need to compute <img src="https://i.upmath.me/svg/2%5E%7B13%7D%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107%20%20" alt="2^{13} \ \textrm{mod}\ 107  " />, then</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%5Cbegin%7Balign%7D%20%0A%20%20%20%202%5E%7B13%7D%20%26%20%5Cequiv%202%5E%7B8%7D%20*%202%5E%7B4%7D%20*%202%5E%7B1%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2042%20*%2016%20*%202%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2014%20*%20(3%20*%2016%20*%202)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2014%20*%20(-11)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%202%20*%20(7%20*%20(-11))%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%202%20*%2030%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2060%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%0A%5Cend%7Balign%7D%0A" alt=" \begin{align} 
-    2^{13} &amp; \equiv 2^{8} * 2^{4} * 2^{1} \ (\textrm{mod}\ 107)
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%5Cbegin%7Balign%7D%20%0A%20%20%20%202%5E%7B13%7D%20%26%20%5Cequiv%202%5E%7B8%7D%20%5Ctimes%202%5E%7B4%7D%20%5Ctimes%202%5E%7B1%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2042%20%5Ctimes%2016%20%5Ctimes%202%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2014%20%5Ctimes%20(3%20%5Ctimes%2016%20%5Ctimes%202)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2014%20%5Ctimes%20(-11)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%202%20%5Ctimes%20(7%20%5Ctimes%20(-11))%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%202%20%5Ctimes%2030%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2060%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%0A%5Cend%7Balign%7D%0A" alt=" \begin{align} 
+    2^{13} &amp; \equiv 2^{8} \times 2^{4} \times 2^{1} \ (\textrm{mod}\ 107)
     \notag  \\
-    &amp; \equiv 42 * 16 * 2 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 42 \times 16 \times 2 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 14 * (3 * 16 * 2) \ (\textrm{mod}\ 107) 
+    &amp; \equiv 14 \times (3 \times 16 \times 2) \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 14 * (-11) \ (\textrm{mod}\ 107) 
+    &amp; \equiv 14 \times (-11) \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 2 * (7 * (-11)) \ (\textrm{mod}\ 107) 
+ &amp; \equiv 2 \times (7 \times (-11)) \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 2 * 30 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 2 \times 30 \ (\textrm{mod}\ 107) 
     \notag \\
  &amp; \equiv 60 \ (\textrm{mod}\ 107) 
 \notag
 \end{align}
 " /></p>
-<p>Therefore public key is <img src="https://i.upmath.me/svg/(107%2C%202%2C%2060)" alt="(107, 2, 60)" />.</p>
+<p>Therefore our public key is <img src="https://i.upmath.me/svg/(107%2C%202%2C%2060)" alt="(107, 2, 60)" />.</p>
 <h3>(c) Suppose that Alice selects <img src="https://i.upmath.me/svg/e%20%3D%205" alt="e = 5" /> and would like to send message <img src="https://i.upmath.me/svg/m%20%3D%2088" alt="m = 88" /> to you. What would she send?</h3>
-<p>We now need to compute <img src="https://i.upmath.me/svg/%202%5E%7B5%7D%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt=" 2^{5} \ \textrm{mod}\ 107" /> and <img src="https://i.upmath.me/svg/%2060%5E%7B5%7D%20*%2088%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt=" 60^{5} * 88 \ \textrm{mod}\ 107" />.</p>
+<p>We now need to compute <img src="https://i.upmath.me/svg/%202%5E%7B5%7D%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt=" 2^{5} \ \textrm{mod}\ 107" /> and <img src="https://i.upmath.me/svg/%2060%5E%7B5%7D%20%5Ctimes%2088%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt=" 60^{5} \times 88 \ \textrm{mod}\ 107" />.</p>
 <p>Firstly it’s easy to see that <img src="https://i.upmath.me/svg/%202%5E%7B5%7D%20%5Cequiv%2032%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20" alt=" 2^{5} \equiv 32 \ (\textrm{mod}\ 107) " />, secondly</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%2060%5E%7B5%7D%20*%2088%20%26%20%5Cequiv%2060%5E%7B4%7D%20*%2012%20*%20(5%20*%2022)%20*%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2060%5E%7B4%7D%20*%2012%20*%203%20*%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2060%5E%7B4%7D%20*%2037%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2060%5E%7B3%7D%20*%2020%20*%20(3%20*%2037)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20%2060%5E%7B3%7D%20*%2020%20*%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2060%5E%7B3%7D%20*%202%5E%7B3%7D%20*%2010%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20120%5E%7B3%7D%20*%2010%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2013%5E%7B3%7D%20*%2010%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20169%20*%20130%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2062%20*%2023%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20(60%2B2)%20*(20%2B3)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%201200%20%2B%2040%20%2B%20180%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2023%20%2B%2040%20%2B%2073%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2023%20%2B%20113%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2023%20%2B%206%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2035%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%0A%5Cend%7Balign%7D%0A" alt=" 
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%2060%5E%7B5%7D%20%5Ctimes%2088%20%26%20%5Cequiv%2060%5E%7B4%7D%20%5Ctimes%2012%20%5Ctimes%20(5%20%5Ctimes%2022)%20%5Ctimes%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2060%5E%7B4%7D%20%5Ctimes%2012%20%5Ctimes%203%20%5Ctimes%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2060%5E%7B4%7D%20%5Ctimes%2037%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2060%5E%7B3%7D%20%5Ctimes%2020%20%5Ctimes%20(3%20%5Ctimes%2037)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20%2060%5E%7B3%7D%20%5Ctimes%2020%20%5Ctimes%204%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2060%5E%7B3%7D%20%5Ctimes%202%5E%7B3%7D%20%5Ctimes%2010%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20120%5E%7B3%7D%20%5Ctimes%2010%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2013%5E%7B3%7D%20%5Ctimes%2010%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20169%20%5Ctimes%20130%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2062%20%5Ctimes%2023%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20(60%2B2)%20%5Ctimes%20(20%2B3)%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%201200%20%2B%2040%20%2B%20180%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2023%20%2B%2040%20%2B%2073%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2023%20%2B%20113%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2023%20%2B%206%20%2B%206%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2035%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%0A%5Cend%7Balign%7D%0A" alt=" 
 \begin{align} 
-    60^{5} * 88 &amp; \equiv 60^{4} * 12 * (5 * 22) * 4 \ (\textrm{mod}\ 107)
+    60^{5} \times 88 &amp; \equiv 60^{4} \times 12 \times (5 \times 22) \times 4 \ (\textrm{mod}\ 107)
     \notag  \\
-    &amp; \equiv 60^{4} * 12 * 3 * 4 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 60^{4} \times 12 \times 3 \times 4 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 60^{4} * 37 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 60^{4} \times 37 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 60^{3} * 20 * (3 * 37) \ (\textrm{mod}\ 107) 
+    &amp; \equiv 60^{3} \times 20 \times (3 \times 37) \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv  60^{3} * 20 * 4 \ (\textrm{mod}\ 107) 
+ &amp; \equiv  60^{3} \times 20 \times 4 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 60^{3} * 2^{3} * 10 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 60^{3} \times 2^{3} \times 10 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 120^{3} * 10 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 120^{3} \times 10 \ (\textrm{mod}\ 107) 
 \notag \\
- &amp; \equiv 13^{3} * 10 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 13^{3} \times 10 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 169 * 130 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 169 \times 130 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv 62 * 23 \ (\textrm{mod}\ 107) 
+ &amp; \equiv 62 \times 23 \ (\textrm{mod}\ 107) 
     \notag \\
- &amp; \equiv (60+2) *(20+3) \ (\textrm{mod}\ 107) 
+ &amp; \equiv (60+2) \times (20+3) \ (\textrm{mod}\ 107) 
     \notag \\
  &amp; \equiv 1200 + 40 + 180 + 6 \ (\textrm{mod}\ 107) 
     \notag \\
@@ -84,15 +84,15 @@
 <p>Therefore, she would send <img src="https://i.upmath.me/svg/(32%2C%2035)" alt="(32, 35)" />.</p>
 <h3>(d) If you receive <img src="https://i.upmath.me/svg/(32%2C%2088)" alt="(32, 88)" />, what is the message <img src="https://i.upmath.me/svg/m" alt="m" />?</h3>
 <p>We should compute <img src="https://i.upmath.me/svg/32%5E%7B13%7D%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt="32^{13} \ \textrm{mod}\ 107" /> first,</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%2032%5E%7B13%7D%20%26%20%5Cequiv%20%7B(2%5E%7B5%7D)%7D%5E%7B13%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%202%5E%7B65%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%202%5E%7B64%7D%20*%202%5E1%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2092%20*%202%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20184%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2077%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%0A%5Cend%7Balign%7D%0A" alt=" 
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%2032%5E%7B13%7D%20%26%20%5Cequiv%20%7B(2%5E%7B5%7D)%7D%5E%7B13%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%202%5E%7B65%7D%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%202%5E%7B64%7D%20%5Ctimes%202%5E1%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%2092%20%5Ctimes%202%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%20184%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2077%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%0A%5Cend%7Balign%7D%0A" alt=" 
 \begin{align} 
     32^{13} &amp; \equiv {(2^{5})}^{13} \ (\textrm{mod}\ 107)
     \notag  \\
     &amp; \equiv 2^{65} \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 2^{64} * 2^1 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 2^{64} \times 2^1 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 92 * 2 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 92 \times 2 \ (\textrm{mod}\ 107) 
     \notag \\
  &amp; \equiv 184 \ (\textrm{mod}\ 107) 
     \notag \\
@@ -101,52 +101,52 @@
 \end{align}
 " /></p>
 <p>Secondly we will compute <img src="https://i.upmath.me/svg/77%5E%7B-1%7D%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt="77^{-1} \ \textrm{mod}\ 107" /> by using Euclidean Algorithm,</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%20107%20%26%20%3D%2077%20*%201%20%2B%2030%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%2077%20%26%20%3D%2030%20*%202%20%2B%2017%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%2030%20%26%20%3D%2017%20*%201%20%2B%2013%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%2017%20%26%20%3D%2013%20*%201%20%2B%204%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%2013%20%26%20%3D%204%20*%203%20%2B%201%0A%20%20%20%20%5Cnotag%20%0A%5Cend%7Balign%7D%0A" alt=" 
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%20107%20%26%20%3D%2077%20%5Ctimes%201%20%2B%2030%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%2077%20%26%20%3D%2030%20%5Ctimes%202%20%2B%2017%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%2030%20%26%20%3D%2017%20%5Ctimes%201%20%2B%2013%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%2017%20%26%20%3D%2013%20%5Ctimes%201%20%2B%204%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%2013%20%26%20%3D%204%20%5Ctimes%203%20%2B%201%0A%20%20%20%20%5Cnotag%20%0A%5Cend%7Balign%7D%0A" alt=" 
 \begin{align} 
-    107 &amp; = 77 * 1 + 30
+    107 &amp; = 77 \times 1 + 30
     \notag  \\
-   77 &amp; = 30 * 2 + 17
+   77 &amp; = 30 \times 2 + 17
     \notag  \\
-    30 &amp; = 17 * 1 + 13
+    30 &amp; = 17 \times 1 + 13
     \notag  \\
-   17 &amp; = 13 * 1 + 4
+   17 &amp; = 13 \times 1 + 4
     \notag  \\
- 13 &amp; = 4 * 3 + 1
+ 13 &amp; = 4 \times 3 + 1
     \notag 
 \end{align}
 " /></p>
 <p>Then,</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%201%20%26%20%3D%2013%20-%204*3%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2013%20-%20(17-13)%20*3%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2013*4%20-%2017%20*3%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%20%20%20%26%20%3D%20(30-17)*4%20-%2017%20*3%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2030*4%20-%2017%20*7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2030*4%20-%20(77-30*2)%20*7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2030*18%20-%2077%20*7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%20(107-77)*18%20-%2077%20*7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%20107*18%20-%2077%20*25%0A%5Cnotag%0A%5Cend%7Balign%7D%0A" alt=" 
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%201%20%26%20%3D%2013%20-%204%20%5Ctimes%203%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2013%20-%20(17-13)%20%5Ctimes%203%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2013%20%5Ctimes%204%20-%2017%20%5Ctimes%203%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%20%20%20%26%20%3D%20(30-17)%20%5Ctimes%204%20-%2017%20%20%5Ctimes%203%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2030%5Ctimes4%20-%2017%20%5Ctimes7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2030%5Ctimes4%20-%20(77-30%5Ctimes2)%20%5Ctimes7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%2030%5Ctimes18%20-%2077%20%5Ctimes7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%20(107-77)%5Ctimes18%20-%2077%20%5Ctimes7%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%20%26%20%3D%20107%5Ctimes18%20-%2077%20%5Ctimes25%0A%5Cnotag%0A%5Cend%7Balign%7D%0A" alt=" 
 \begin{align} 
-    1 &amp; = 13 - 4*3
+    1 &amp; = 13 - 4 \times 3
     \notag  \\
-     &amp; = 13 - (17-13) *3
+     &amp; = 13 - (17-13) \times 3
     \notag  \\
-     &amp; = 13*4 - 17 *3
+     &amp; = 13 \times 4 - 17 \times 3
     \notag  \\
-        &amp; = (30-17)*4 - 17 *3
+        &amp; = (30-17) \times 4 - 17  \times 3
     \notag  \\
-     &amp; = 30*4 - 17 *7
+     &amp; = 30\times4 - 17 \times7
     \notag  \\
-     &amp; = 30*4 - (77-30*2) *7
+     &amp; = 30\times4 - (77-30\times2) \times7
     \notag  \\
-     &amp; = 30*18 - 77 *7
+     &amp; = 30\times18 - 77 \times7
     \notag  \\
-     &amp; = (107-77)*18 - 77 *7
+     &amp; = (107-77)\times18 - 77 \times7
     \notag  \\
-     &amp; = 107*18 - 77 *25
+     &amp; = 107\times18 - 77 \times25
 \notag
 \end{align}
 " /></p>
-<p>We get <img src="https://i.upmath.me/svg/77%20*%20(-25)%20%5Cequiv%20%201%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20" alt="77 * (-25) \equiv  1 \ (\textrm{mod}\ 107) " />, i.e. <img src="https://i.upmath.me/svg/77%5E%7B-1%7D%20%5Cequiv%20%20-25%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)" alt="77^{-1} \equiv  -25 \ (\textrm{mod}\ 107)" />.</p>
-<p>Finally, we compute <img src="https://i.upmath.me/svg/(-25)%20*%2088%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt="(-25) * 88 \ \textrm{mod}\ 107" /> in order to decrypt the message,</p>
-<p align="center"><img align="center" src="https://i.upmath.me/svg/%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%20(-25)%20*%2088%20%26%20%5Cequiv%20(-25%20*%204)%20*%2022%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20(-100)%20*%2022%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%207%20*%2022%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20154%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2047%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%0A%5Cend%7Balign%7D%0A" alt="
+<p>We have <img src="https://i.upmath.me/svg/77%20%5Ctimes%20(-25)%20%5Cequiv%20%201%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20" alt="77 \times (-25) \equiv  1 \ (\textrm{mod}\ 107) " />, i.e. <img src="https://i.upmath.me/svg/77%5E%7B-1%7D%20%5Cequiv%20%20-25%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)" alt="77^{-1} \equiv  -25 \ (\textrm{mod}\ 107)" />.</p>
+<p>Finally, we compute <img src="https://i.upmath.me/svg/(-25)%20%5Ctimes%2088%20%5C%20%5Ctextrm%7Bmod%7D%5C%20107" alt="(-25) \times 88 \ \textrm{mod}\ 107" /> in order to decrypt the message,</p>
+<p align="center"><img align="center" src="https://i.upmath.me/svg/%0A%5Cbegin%7Balign%7D%20%0A%20%20%20%20(-25)%20%5Ctimes%2088%20%26%20%5Cequiv%20(-25%20%5Ctimes%204)%20%5Ctimes%2022%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%0A%20%20%20%20%5Cnotag%20%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20(-100)%20%5Ctimes%2022%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%207%20%5Ctimes%2022%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%20%20%20%26%20%5Cequiv%20154%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%20%20%20%20%5Cnotag%20%5C%5C%0A%20%26%20%5Cequiv%2047%20%5C%20(%5Ctextrm%7Bmod%7D%5C%20107)%20%0A%5Cnotag%0A%5Cend%7Balign%7D%0A" alt="
 \begin{align} 
-    (-25) * 88 &amp; \equiv (-25 * 4) * 22 \ (\textrm{mod}\ 107)
+    (-25) \times 88 &amp; \equiv (-25 \times 4) \times 22 \ (\textrm{mod}\ 107)
     \notag  \\
-    &amp; \equiv (-100) * 22 \ (\textrm{mod}\ 107) 
+    &amp; \equiv (-100) \times 22 \ (\textrm{mod}\ 107) 
     \notag \\
-    &amp; \equiv 7 * 22 \ (\textrm{mod}\ 107) 
+    &amp; \equiv 7 \times 22 \ (\textrm{mod}\ 107) 
     \notag \\
     &amp; \equiv 154 \ (\textrm{mod}\ 107) 
     \notag \\
@@ -154,4 +154,4 @@
 \notag
 \end{align}
 " /></p>
-<p>Therefore, our message <img src="https://i.upmath.me/svg/m" alt="m" /> is equal to 47.</p>
+<p>Therefore, our message <img src="https://i.upmath.me/svg/m" alt="m" /> is equal to <img src="https://i.upmath.me/svg/47" alt="47" />.</p>
