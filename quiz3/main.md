@@ -1,6 +1,6 @@
 ﻿# El Gamal Cryptosystem
 ### 1. (a) Consider the prime $$p = 107$$. Show that $$2$$ generates $$ {\mathbb{F}_{107}}^{\star}$$.
-Since $$ |{\mathbb{F}_{107}}^{\star}| = 106 = 2 \times 53 $$,  it's satisfied to prove that
+Since $$ |{\mathbb{F}_{107}}^{\star}| = 106 = 2 \times 53 $$, and $$2^{2} \equiv 4 \not\equiv 1\ (\textrm{mod}\ 107)$$ it's satisfied to prove that
 $$ 2^{53} \equiv -1\ (\textrm{mod}\ 107) $$ .
 
 Consider that $$ 53 = 32 + 16 + 4 + 1 $$, then
